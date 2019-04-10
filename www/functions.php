@@ -124,7 +124,7 @@
 	  {
 		  if($k == $key)
 		  {
-			  return True;
+			  return true;
 		  }
 	  }
 	return false;
@@ -171,7 +171,7 @@
 			$strdata = file_get_contents ("/boot/cmdline.txt");
 			$arrdata = explode (" ",$strdata);
 			foreach($arrdata as $key => $value) {
-			  if (strpos($value, 'smsc95xx.macaddr=') !== FALSE) {
+			  if (strpos($value, 'smsc95xx.macaddr=') !== false) {
 				unset($arrdata[$key]);
 			  }
 			}
@@ -217,7 +217,7 @@
 					$strdata = file_get_contents ("/boot/cmdline.txt");
 					$arrdata = explode (" ",$strdata);
 					foreach($arrdata as $key => $value) {
-					  if (strpos($value, 'smsc95xx.macaddr=') !== FALSE) {
+					  if (strpos($value, 'smsc95xx.macaddr=') !== false) {
 						unset($arrdata[$key]);
 					  }
 					}
@@ -242,7 +242,7 @@
 					$strdata = file_get_contents ("/boot/cmdline.txt");
 					$arrdata = explode (" ",$strdata);
 					foreach($arrdata as $key => $value) {
-					  if (strpos($value, 'smsc95xx.macaddr=') !== FALSE) {
+					  if (strpos($value, 'smsc95xx.macaddr=') !== false) {
 						unset($arrdata[$key]);
 					  }
 					}
